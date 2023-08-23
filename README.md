@@ -68,3 +68,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### Usefull links
+
+[Ant Design Layout is not working as expected](https://stackoverflow.com/questions/61137908/ant-design-layout-is-not-working-as-expected)
+
+[How to set 100% of height layout #4926](https://github.com/ant-design/ant-design/issues/4926)
