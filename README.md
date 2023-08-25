@@ -74,3 +74,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 [Ant Design Layout is not working as expected](https://stackoverflow.com/questions/61137908/ant-design-layout-is-not-working-as-expected)
 
 [How to set 100% of height layout #4926](https://github.com/ant-design/ant-design/issues/4926)
+
+[react-router-dom-nprogress](https://codesandbox.io/s/react-router-dom-nprogress-qf1ms?file=/src/routes.js)
+[React progress bar on page load/route change(both Next js & CRA)](https://dev.to/ataparvinghods/react-progress-bar-on-route-changing-both-next-cra-3d27)
