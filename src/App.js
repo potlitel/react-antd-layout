@@ -7,6 +7,8 @@ import {
   VideoCameraOutlined,
 } from "@ant-design/icons";
 import { Layout, Menu, Button, theme } from "antd";
+import { Link } from "react-router-dom";
+import Rutas from "./routes";
 const { Header, Sider, Content } = Layout;
 const App = () => {
   const [collapsed, setCollapsed] = useState(false);
@@ -17,28 +19,26 @@ const App = () => {
     <Layout>
       <Sider trigger={null} collapsible collapsed={collapsed}>
         <div className="demo-logo-vertical" />
-        <Menu
-          theme="dark"
-          mode="inline"
-          defaultSelectedKeys={["1"]}
-          items={[
-            {
-              key: "1",
-              icon: <UserOutlined />,
-              label: "nav 1",
-            },
-            {
-              key: "2",
-              icon: <VideoCameraOutlined />,
-              label: "nav 2",
-            },
-            {
-              key: "3",
-              icon: <UploadOutlined />,
-              label: "nav 3",
-            },
-          ]}
-        />
+        <Menu theme="dark" mode="inline" defaultSelectedKeys={["1"]}>
+          <Menu.Item key="1">
+            <Link to="/">
+              <UserOutlined />
+              <span>Nav 1</span>
+            </Link>
+          </Menu.Item>
+          <Menu.Item key="2">
+            <Link to="/nav2">
+              <VideoCameraOutlined />
+              <span>Nav 2</span>
+            </Link>
+          </Menu.Item>
+          <Menu.Item key="3">
+            <Link to="/nav3">
+              <UploadOutlined />
+              <span>Nav 3</span>
+            </Link>
+          </Menu.Item>
+        </Menu>
       </Sider>
       <Layout>
         <Header
@@ -68,7 +68,8 @@ const App = () => {
             background: colorBgContainer,
           }}
         >
-          Content
+          {/* Content */}
+          <Rutas />
         </Content>
       </Layout>
     </Layout>
