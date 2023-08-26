@@ -25,11 +25,18 @@ code {
 }
 .demo-logo-vertical {
   height: 32px;
-  background: rgba(255, 255, 255, 0.2);
+  /* background: rgba(255, 255, 255, 0.2); */
+  background-image: url("./assets/v2-9b4fb9abf42031ea4eb365bbeb8a098c_720w.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   margin: 16px;
   border-radius: 6px;
 }
 
 .site-layout .site-layout-background {
   background: #fff;
+}
+
+#components-grid-demo-flex-align [class~="ant-row"] {
+  background: rgba(128, 128, 128, 0.08);
 }
