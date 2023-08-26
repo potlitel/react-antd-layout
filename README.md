@@ -1,3 +1,9 @@
+# Info
+
+This repository represents a realization of the practical exercise of ant design layout and looks like this:
+
+<img src="images/Resume.gif" alt="Logo" width="840" height="480">
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -76,4 +82,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 [How to set 100% of height layout #4926](https://github.com/ant-design/ant-design/issues/4926)
 
 [react-router-dom-nprogress](https://codesandbox.io/s/react-router-dom-nprogress-qf1ms?file=/src/routes.js)
+
 [React progress bar on page load/route change(both Next js & CRA)](https://dev.to/ataparvinghods/react-progress-bar-on-route-changing-both-next-cra-3d27)
+
+[Flexbox utilities in bootstrap with examples](https://www.geeksforgeeks.org/flexbox-utilities-in-bootstrap-with-examples/)

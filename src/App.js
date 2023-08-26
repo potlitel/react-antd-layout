@@ -5,8 +5,12 @@ import {
   UploadOutlined,
   UserOutlined,
   VideoCameraOutlined,
+  FieldBinaryOutlined,
+  HomeOutlined,
+  CheckOutlined,
+  CloseOutlined,
 } from "@ant-design/icons";
-import { Layout, Menu, Button, theme } from "antd";
+import { Layout, Menu, Button, theme, Switch, Space } from "antd";
 import { Link } from "react-router-dom";
 import Rutas from "./routes";
 const { Header, Sider, Content } = Layout;
@@ -22,7 +26,7 @@ const App = () => {
         <Menu theme="dark" mode="inline" defaultSelectedKeys={["1"]}>
           <Menu.Item key="0">
             <Link to="/">
-              <UserOutlined />
+              <HomeOutlined />
               <span>Antd Components</span>
             </Link>
           </Menu.Item>
@@ -34,7 +38,7 @@ const App = () => {
           </Menu.Item>
           <Menu.Item key="2">
             <Link to="/nav2">
-              <VideoCameraOutlined />
+              <FieldBinaryOutlined />
               <span>Steps</span>
             </Link>
           </Menu.Item>
@@ -71,16 +75,27 @@ const App = () => {
             background: colorBgContainer,
           }}
         >
-          <Button
-            type="text"
-            icon={collapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
-            onClick={() => setCollapsed(!collapsed)}
-            style={{
-              fontSize: "16px",
-              width: 64,
-              height: 64,
-            }}
-          />
+          <div style={{ width: "100%" }} class="d-flex justify-content-between">
+            <Button
+              type="text"
+              icon={collapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
+              onClick={() => setCollapsed(!collapsed)}
+              style={{
+                fontSize: "16px",
+                width: 64,
+                height: 64,
+              }}
+            />
+            <Space direction="vertical" style={{ paddingRight: "2%" }}>
+              <Switch
+                // checkedChildren={<CheckOutlined />}
+                // unCheckedChildren={<CloseOutlined />}
+                checkedChildren="Light mode"
+                unCheckedChildren="Dark mode"
+                defaultChecked
+              />
+            </Space>
+          </div>
         </Header>
         <Content
           style={{
