@@ -86,3 +86,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 [React progress bar on page load/route change(both Next js & CRA)](https://dev.to/ataparvinghods/react-progress-bar-on-route-changing-both-next-cra-3d27)
 
 [Flexbox utilities in bootstrap with examples](https://www.geeksforgeeks.org/flexbox-utilities-in-bootstrap-with-examples/)
+
+[How to make antd sidebar menu items active depending on the current url?](https://stackoverflow.com/questions/66577180/how-to-make-antd-sidebar-menu-items-active-depending-on-the-current-url)

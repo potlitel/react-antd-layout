@@ -1,18 +1,8 @@
 import React, { useState } from "react";
-import {
-  MenuFoldOutlined,
-  MenuUnfoldOutlined,
-  UploadOutlined,
-  UserOutlined,
-  VideoCameraOutlined,
-  FieldBinaryOutlined,
-  HomeOutlined,
-  CheckOutlined,
-  CloseOutlined,
-} from "@ant-design/icons";
-import { Layout, Menu, Button, theme, Switch, Space } from "antd";
-import { Link } from "react-router-dom";
+import { MenuFoldOutlined, MenuUnfoldOutlined } from "@ant-design/icons";
+import { Layout, Button, theme, Switch, Space } from "antd";
 import Rutas from "./routes";
+import NavItems from "./features/NavItems";
 const { Header, Sider, Content } = Layout;
 const App = () => {
   const [collapsed, setCollapsed] = useState(false);
@@ -23,50 +13,7 @@ const App = () => {
     <Layout>
       <Sider trigger={null} collapsible collapsed={collapsed}>
         <div className="demo-logo-vertical" />
-        <Menu theme="dark" mode="inline" defaultSelectedKeys={["1"]}>
-          <Menu.Item key="0">
-            <Link to="/">
-              <HomeOutlined />
-              <span>Antd Components</span>
-            </Link>
-          </Menu.Item>
-          <Menu.Item key="1">
-            <Link to="/nav1">
-              <UserOutlined />
-              <span>Statistic</span>
-            </Link>
-          </Menu.Item>
-          <Menu.Item key="2">
-            <Link to="/nav2">
-              <FieldBinaryOutlined />
-              <span>Steps</span>
-            </Link>
-          </Menu.Item>
-          <Menu.Item key="3">
-            <Link to="/nav3">
-              <UploadOutlined />
-              <span>Timeline</span>
-            </Link>
-          </Menu.Item>
-          <Menu.Item key="4">
-            <Link to="/nav4">
-              <UploadOutlined />
-              <span>Spin</span>
-            </Link>
-          </Menu.Item>
-          <Menu.Item key="5">
-            <Link to="/nav5">
-              <UploadOutlined />
-              <span>Tooltip</span>
-            </Link>
-          </Menu.Item>
-          <Menu.Item key="6">
-            <Link to="/nav6">
-              <UploadOutlined />
-              <span>Result</span>
-            </Link>
-          </Menu.Item>
-        </Menu>
+        <NavItems />
       </Sider>
       <Layout>
         <Header
