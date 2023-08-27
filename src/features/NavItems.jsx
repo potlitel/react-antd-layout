@@ -43,43 +43,71 @@ const NavItems = () => {
     >
       <Menu.Item key="/">
         <Link to="/">
-          <HomeOutlined />
+          <HomeOutlined
+            style={{
+              fontSize: "20px",
+            }}
+          />
           <span>Antd Components</span>
         </Link>
       </Menu.Item>
       <Menu.Item key="/nav1">
         <Link to="/nav1">
-          <ExpandOutlined />
+          <ExpandOutlined
+            style={{
+              fontSize: "20px",
+            }}
+          />
           <span>Statistic</span>
         </Link>
       </Menu.Item>
       <Menu.Item key="/nav2">
         <Link to="/nav2">
-          <RiseOutlined />
+          <RiseOutlined
+            style={{
+              fontSize: "20px",
+            }}
+          />
           <span>Steps</span>
         </Link>
       </Menu.Item>
       <Menu.Item key="/nav3">
         <Link to="/nav3">
-          <DashOutlined />
+          <DashOutlined
+            style={{
+              fontSize: "20px",
+            }}
+          />
           <span>Timeline</span>
         </Link>
       </Menu.Item>
       <Menu.Item key="/nav4">
         <Link to="/nav4">
-          <LoadingOutlined />
+          <LoadingOutlined
+            style={{
+              fontSize: "20px",
+            }}
+          />
           <span>Spin</span>
         </Link>
       </Menu.Item>
       <Menu.Item key="/nav5">
         <Link to="/nav5">
-          <FontColorsOutlined />
+          <FontColorsOutlined
+            style={{
+              fontSize: "20px",
+            }}
+          />
           <span>Tooltip</span>
         </Link>
       </Menu.Item>
       <Menu.Item key="/nav6">
         <Link to="/nav6">
-          <FileDoneOutlined />
+          <FileDoneOutlined
+            style={{
+              fontSize: "20px",
+            }}
+          />
           <span>Result</span>
         </Link>
       </Menu.Item>
